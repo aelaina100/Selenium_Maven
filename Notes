@@ -1,0 +1,47 @@
+     
+       ********  Instuctions: For this Maven project, the 1st step is to read these notes line by line ********
+      
+	
+	Homework/Note: Can NOT find the one mvn command running multiple profiles simultaneously. WOrk on it !
+	
+	
+	             **** This Maven project was created as a result of following documented notes step by step ****
+	             
+- Screenshot attached shows the values of "groupID" & "ArtifactId" used to create this maven project skeleton situated to the left.
+- These values entered are also automatically reflected/included in the pom.xml file as:
+  
+	                            <groupId>SeleniumJava</groupId>           // reflects the two packages' names.Starts with small letter.
+                                <artifactId>Selenium_Maven</artifactId>   // reflects the prpject's name.
+                                <version>1.0-SNAPSHOT</version>
+
+-For Maven to recognize its maven testcases inside the 'test' folder,Then put'Test' keyword at the end of each .java class file.
+
+- Maven commands, will ONLY work as long as the surefire pluggin is included in the pom.xml file. Where,
+- The final version of this surefire pluggin SHOULD ONLY be in the 'profile' format as shown in this project.
+- Even if you have 1 testng.xml file, the surefire pluggin should ALWAYS be in the profile format
+
+	-Hence, mvn commands are:
+-	mvn clean                                                   : cleans older builds
+-	mvn compile                                                 : uncovers syntax error(s) if any.
+-	mvn test -PRegression (since profile id = Regression): runs our testng.xml file from maven(from pom.xml file)
+ or
+-	mvn test -PSmoke (since profile id = Smoke): runs our testng.xml file from maven(from pom.xml file)                                                                  
+ 
+So: Run these commands from cmd where directory is set at the project's level (Where our POM.XML file is), that's:
+  C:\Users\aelai\Selenium_Maven.
+  
+ When you finish running these mvn commands: refresh the project & navigate to target/surefire-reports, and
+ examine index.html & testng-results.xml (The latter will be integrated into jenkins so that you have TestNg reports
+ associated with each build run).
+ 
+ *Crucial": if you enter an invalid/wrong mvn command, then Maven (POM.XML file), will BLINDLY execute ALL testcases,
+ that are under the 'Test' folder. For this reason, I created a .java class file that is intentionally NOT included in any 
+ testNg.xml file (ZampleTest.java). SO when you enter an invalid/wrong mvn commands, methods inside sampleTest.java
+ will be executed with an output conveying that all testcases under the 'Test' folder were executed since you mvn command
+ was invalid !.
+ An invalid mvn command would be: 'mvn test' since our surefire pluggin is utilizing the profile format (which happens
+ to be the ONLY & FINAL accepted format). SO instead the correct mvn command is 'mvn test -P(name of profile id to execute its
+ associated testng file) 
+ 
+ 
+ 

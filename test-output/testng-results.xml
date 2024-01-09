@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-27T22:25:13 EDT" name="Suite" finished-at="2023-08-27T22:25:13 EDT" duration-ms="63">
+    <groups>
+    </groups>
+    <test started-at="2023-08-27T22:25:13 EDT" name="Test" finished-at="2023-08-27T22:25:13 EDT" duration-ms="63">
+      <class name="seleniumJava.seleniumTest">
+        <test-method signature="seleniumBrowse()[pri:0, instance:seleniumJava.seleniumTest@10959ece]" started-at="2023-08-27T22:25:13 EDT" name="seleniumBrowse" finished-at="2023-08-27T22:25:13 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumBrowse -->
+        <test-method signature="seleniumElement()[pri:0, instance:seleniumJava.seleniumTest@10959ece]" started-at="2023-08-27T22:25:13 EDT" name="seleniumElement" finished-at="2023-08-27T22:25:13 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumElement -->
+      </class> <!-- seleniumJava.seleniumTest -->
+      <class name="seleniumJava.restApiTest">
+        <test-method signature="restApiDeleteTwitter()[pri:0, instance:seleniumJava.restApiTest@68c72235]" started-at="2023-08-27T22:25:13 EDT" name="restApiDeleteTwitter" finished-at="2023-08-27T22:25:13 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restApiDeleteTwitter -->
+        <test-method signature="restApiPostjira()[pri:0, instance:seleniumJava.restApiTest@68c72235]" started-at="2023-08-27T22:25:13 EDT" name="restApiPostjira" finished-at="2023-08-27T22:25:13 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restApiPostjira -->
+      </class> <!-- seleniumJava.restApiTest -->
+      <class name="seleniumJava.appiumTest">
+        <test-method signature="appiumIosApp()[pri:0, instance:seleniumJava.appiumTest@13b13b5d]" started-at="2023-08-27T22:25:13 EDT" name="appiumIosApp" finished-at="2023-08-27T22:25:13 EDT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumIosApp -->
+        <test-method signature="appiumNativeApp()[pri:0, instance:seleniumJava.appiumTest@13b13b5d]" started-at="2023-08-27T22:25:13 EDT" name="appiumNativeApp" finished-at="2023-08-27T22:25:13 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumNativeApp -->
+      </class> <!-- seleniumJava.appiumTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
